@@ -2,6 +2,7 @@
 
 ## 0.1.1 — BellLock package
 
+- Standardized GitHub and Thunderstore documentation for the BellLock release.
 - Switched the Thunderstore package name from `BellControl` to `BellLock` so players can find **BellLock**.
 - Updated the Stonewards Calling Bell + padlock package icon.
 - Kept guest bell permission enforcement, F8 controls and the compact Emote-relative HUD unchanged.

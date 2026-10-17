@@ -2,6 +2,7 @@
 
 ## 0.1.1 — BellLock package
 
+- Standardized the player-facing README and configuration instructions.
 - Prepared under the **BellLock** name (Thunderstore package ID: `BellLock`) for easier discovery.
 - Added a pixel-art Calling Bell icon with a matching padlock.
 - The host can allow or block guest bell ringing with **F8** or a compact, clickable HUD control.

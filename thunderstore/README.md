@@ -1,42 +1,64 @@
-# BellLock 🔔🔒
+# Stonewards BellLock
 
-**Control who can ring the wave bell in Stonewards.** The host can lock or unlock the bell for other players without affecting their own ability to ring it.
+**Decide when your teammates can ring the wave bell.** BellLock gives the host an easy way to block or allow guest bell requests without restricting the host.
 
-## Features
+## ✨ Features
 
-- **Host-only controls:** press **F8** or use the compact **ALLOW / BLOCK** button.
-- **Guests are blocked by default** whenever a new host session starts.
-- **Server-side enforcement:** guests cannot start the bell while blocked, even if they do not have this mod.
-- **Compact native-style HUD:** a one-line panel that automatically positions itself above the in-game **Emote** prompt.
-- **Customizable:** adjust the panel's scale, position and Emote gap using BepInEx settings.
+- **Guests blocked by default** whenever a hosted session starts.
+- **Host-only control** — press **F8** or use the compact **ALLOW / BLOCK** button.
+- **Server-side protection** — blocked guest ring requests are rejected even if guests do not have the mod.
+- **Compact Stonewards-style HUD** — shows whether guest bell access is **ALLOWED** or **BLOCKED**.
+- **Emote-aware positioning** — automatically appears near the game's Emote shortcut, with adjustable placement and scale.
 
-## How to use
+## 🎮 How to use
 
-1. Search Thunderstore for **BellLock** and install it with r2modman or Thunderstore Mod Manager. If the older **BellControl** package is installed, uninstall it first to avoid loading the same plugin twice.
-2. **The host** starts Stonewards through the mod manager and hosts a session.
-3. Press **F8** to allow guests to ring the bell; press it again to block them.
+1. Install **BellLock** on the host's game and launch modded.
+2. Host a session. Guests start with bell access **BLOCKED**.
+3. Press **F8** or click **ALLOW** when the cursor is unlocked to permit guest ringing.
+4. Press **F8** or click **BLOCK** to lock the bell again.
 
-The host can always ring. **Guests do not need to install BellLock.** The panel is visible only to the host.
+**Only the host needs to install BellLock.** The host can ring normally while guests are blocked. Each new hosted session resets guest access to **BLOCKED**.
 
-## Position and configuration
+The panel may wait for the Emote UI before appearing, but the F8 shortcut works even while it is hidden.
 
-By default, the small panel follows Emote at the lower left. It stays hidden until Emote loads so it does not jump between positions. If Emote cannot be detected, it uses a fixed fallback. To use manual placement:
+## ⚙️ Configuration
 
-```ini
-[Appearance]
-Anchor = BottomLeft
-FollowEmote = false
-HorizontalOffset = 26
-VerticalOffset = 80
-Scale = 1
-```
+The panel follows the Emote shortcut in the lower-left corner by default. You can customize its position and size in the active profile's BepInEx config:
 
-Configuration file: `BepInEx/config/dev.stonewards.bellcontrol.cfg`. Other available settings include `EmoteGap` and `EmoteHorizontalAdjust`.
+`BepInEx/config/dev.stonewards.bellcontrol.cfg`
 
-## Compatibility
+| Setting | Default | Description |
+| --- | --- | --- |
+| `Appearance.FollowEmote` | `true` | Follow the Emote shortcut when anchored at the bottom left |
+| `Appearance.EmoteGap` | `12` | Space above the Emote shortcut |
+| `Appearance.EmoteHorizontalAdjust` | `0` | Horizontal Emote alignment |
+| `Appearance.Anchor` | `BottomLeft` | Manual screen corner |
+| `Appearance.HorizontalOffset` | `26` | Manual horizontal inset |
+| `Appearance.VerticalOffset` | `80` | Manual vertical inset |
+| `Appearance.Scale` | `1.0` | Panel size multiplier |
 
-Designed for **Stonewards 0.2.3** and **BepInEx 5**. This is a **host-side mod**; it does not alter the normal countdown. Guests may still see the vanilla bell interaction even while the host blocks their request.
+Set `FollowEmote = false` for fixed manual positioning. **F8 is not rebindable in BellLock** in this version; if it conflicts with PartyHUD's build inspector, rebind F8 in PartyHUD.
 
-**Note:** the default **F8** shortcut may overlap with hotkeys used by other mods, including Party HUD's build inspector. Rebind the other mod's shortcut if needed.
+## 📦 Installation
 
-[Source code](https://github.com/thereisnouser/stonewards-bell-lock) · [Report an issue](https://github.com/thereisnouser/stonewards-bell-lock/issues)
+Install **BellLock** using **r2modman** or another compatible Thunderstore mod manager, then launch Stonewards through **Start modded**. BepInExPack is installed as a dependency.
+
+**Important:** If you previously installed **BellControl**, uninstall or disable it before installing BellLock. The two packages share the same internal plugin ID and should not be active together.
+
+## 🔧 Compatibility
+
+- **Game:** Stonewards **0.2.3**.
+- **Mod loader:** BepInEx 5.
+- **Multiplayer:** Host-side mod; guests do not need to install it.
+
+## ⚠️ Known limitations
+
+Blocked guests may still see the vanilla bell interaction prompt, even though the server rejects the command. BellLock does not alter the normal wave countdown or other wave-start mechanisms. Future game updates may require compatibility changes.
+
+## 🔗 Links
+
+[GitHub](https://github.com/thereisnouser/stonewards-bell-lock) · [Report an issue](https://github.com/thereisnouser/stonewards-bell-lock/issues) · [Changelog](https://github.com/thereisnouser/stonewards-bell-lock/blob/main/CHANGELOG.md)
+
+---
+
+*Made by thereisnouser*
