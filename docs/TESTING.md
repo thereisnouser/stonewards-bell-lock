@@ -14,6 +14,8 @@ Target game: Stonewards 0.2.3 (BepInEx 5). Use the **stonewards-bell-lock** r2mo
 - [ ] Guests can ring after ALLOWED; blocking again prevents subsequent attempts.
 - [ ] After the host leaves and starts a new session, guest permissions reset to BLOCKED.
 - [ ] Normal wave progression, countdown and player saves behave as before.
+- [ ] Confirm the Thunderstore listing is displayed as **Bell Lock** (`Bell_Lock`) and can be found by searching for Bell Lock.
+- [ ] Verify the old BellControl package is not installed alongside Bell Lock, since both share the same plugin ID.
 - [ ] Test the final Thunderstore ZIP in a **clean mod-manager profile** before publishing.
 - [ ] Confirm ZIP contains `manifest.json`, `icon.png`, `README.md`, `CHANGELOG.md`, `LICENSE` and `plugins/StonewardsBellControl.dll`.
 

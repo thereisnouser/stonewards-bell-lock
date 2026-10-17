@@ -1,15 +1,14 @@
 # Changelog
 
-## 0.1.1
+## 0.1.1 — Bell Lock package
 
-- Replaced the package icon with the pixel-art Calling Bell and a matching padlock.
-- No changes to bell permissions or HUD behavior.
+- Published under the **Bell Lock** name (Thunderstore package ID: `Bell_Lock`) for easier discovery.
+- Added a pixel-art Calling Bell icon with a matching padlock.
+- The host can allow or block guest bell ringing with **F8** or a compact, clickable HUD control.
+- Guest bell requests are checked on the server; guests do not need this mod.
+- The panel automatically appears above Emote, with configurable placement and scale.
+- No gameplay behavior changed compared with BellControl 0.1.1.
 
-## 0.1.0 — Initial public release
+## 0.1.0 — Initial BellControl release
 
-- Added host-controlled guest bell permissions, blocked by default each session.
-- Prevented guest bell activation on the host while allowing the host to ring normally.
-- Added a compact, one-line **BELL · BLOCKED/ALLOWED · ALLOW/BLOCK [F8]** control.
-- Styled the panel to match Stonewards / Party HUD.
-- Positioned the panel above Emote automatically, without a visible startup jump.
-- Added configurable size, layout, Emote-following and fallback options.
+- Added host-controlled guest bell permissions, blocked by default on each hosted session.

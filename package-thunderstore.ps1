@@ -1,4 +1,4 @@
-# Builds a verified Stonewards Bell Control Thunderstore upload ZIP.
+# Builds a verified Stonewards Bell Lock Thunderstore upload ZIP.
 # Does not publish or upload anything to Thunderstore.
 [CmdletBinding()]
 param(
@@ -28,7 +28,7 @@ foreach ($path in @($manifestPath, $readmePath, $changelogPath,
 }
 
 $manifest = Get-Content -LiteralPath $manifestPath -Raw | ConvertFrom-Json
-if ($manifest.name -ne 'BellControl' -or
+if ($manifest.name -ne 'Bell_Lock' -or
     $manifest.version_number -notmatch '^\d+\.\d+\.\d+$') {
     throw 'Unexpected Thunderstore name or invalid version_number.'
 }
@@ -67,7 +67,7 @@ if (-not $SkipBuild) {
     if (-not (Test-Path -LiteralPath $ProfileDir -PathType Container)) {
         throw "Expected r2modman profile not found: $ProfileDir"
     }
-    Write-Host "Building Bell Control $version for Thunderstore..." -ForegroundColor Cyan
+    Write-Host "Building Bell Lock $version for Thunderstore..." -ForegroundColor Cyan
     & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $root 'build-and-install.ps1') `
         -GameDir $GameDir -ProfileDir $ProfileDir -Configuration Release -NoInstall
     if ($LASTEXITCODE -ne 0) { throw "Release compilation failed ($LASTEXITCODE)." }
@@ -95,7 +95,7 @@ if (-not $dllText.Contains($version)) {
 
 $dest = Join-Path $root 'dist'
 New-Item -ItemType Directory -Path $dest -Force | Out-Null
-$zip = Join-Path $dest "thereisnouser-BellControl-$version.zip"
+$zip = Join-Path $dest "thereisnouser-Bell_Lock-$version.zip"
 if (Test-Path -LiteralPath $zip) {
     throw "Release ZIP already exists: $zip. Remove it explicitly only if rebuilding."
 }

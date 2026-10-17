@@ -12,7 +12,7 @@
 
 ## How to use
 
-1. Install the package using r2modman or Thunderstore Mod Manager.
+1. Search Thunderstore for **Bell Lock** and install it with r2modman or Thunderstore Mod Manager. If the older **BellControl** package is installed, uninstall it first to avoid loading the same plugin twice.
 2. **The host** starts Stonewards through the mod manager and hosts a session.
 3. Press **F8** to allow guests to ring the bell; press it again to block them.
 

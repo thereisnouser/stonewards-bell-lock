@@ -15,7 +15,7 @@ A lightweight **host-side** mod for Stonewards that lets the host decide when te
 
 ## Install
 
-Install **BellControl** (the existing Thunderstore package name) through Thunderstore/r2modman and start Stonewards using the **same profile**. Only the **host** needs to install it.
+Install **Bell Lock** (Thunderstore ID: `Bell_Lock`) through Thunderstore/r2modman and start Stonewards using the **same profile**. Only the **host** needs to install it. If you installed the older `BellControl` listing, remove it before installing Bell Lock: both contain the same BepInEx plugin.
 
 Configuration file: `BepInEx/config/dev.stonewards.bellcontrol.cfg`.
 
@@ -43,7 +43,7 @@ The GitHub repository is `stonewards-bell-lock`, and the matching r2modman profi
 git remote set-url origin https://github.com/thereisnouser/stonewards-bell-lock.git
 ```
 
-The existing Thunderstore package ID `BellControl`, BepInEx plugin GUID `dev.stonewards.bellcontrol`, DLL `StonewardsBellControl.dll` and config filename remain unchanged to preserve compatibility with existing installations.
+The Thunderstore package is **`Bell_Lock`**, displayed as **Bell Lock** in the mod browser. This is a separate listing from the older `BellControl` package and does **not** automatically update it. To avoid duplicate plugins, uninstall `BellControl` before installing `Bell_Lock`. The BepInEx plugin GUID `dev.stonewards.bellcontrol`, DLL `StonewardsBellControl.dll` and config filename are unchanged.
 
 ## Building from source
 
@@ -63,7 +63,7 @@ powershell -ExecutionPolicy Bypass -File .\package-thunderstore.ps1 `
   -ProfileDir "C:\Users\user\AppData\Roaming\r2modmanPlus-local\Stonewards\profiles\stonewards-bell-lock"
 ```
 
-Result: `dist/thereisnouser-BellControl-0.1.1.zip`. The script validates the version, PNG icon, DLL and ZIP contents before finishing; it **does not upload** the package.
+Result: `dist/thereisnouser-Bell_Lock-0.1.1.zip`. The script validates the version, PNG icon, DLL and ZIP contents before finishing; it **does not upload** the package.
 
 See [Thunderstore description](thunderstore/README.md), [multiplayer tests](docs/TESTING.md), [changelog](CHANGELOG.md), or [report an issue](https://github.com/thereisnouser/stonewards-bell-lock/issues).
 

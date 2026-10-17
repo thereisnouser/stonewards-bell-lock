@@ -1,11 +1,13 @@
 # Changelog
 
-## 0.1.1
+## 0.1.1 — Bell Lock package
 
-- Replaced the package icon with the pixel-art Calling Bell and a matching padlock.
-- No changes to bell permissions or HUD behavior.
+- Switched the Thunderstore package name from `BellControl` to `Bell_Lock` so players can find **Bell Lock**.
+- Updated the Stonewards Calling Bell + padlock package icon.
+- Kept guest bell permission enforcement, F8 controls and the compact Emote-relative HUD unchanged.
+- This package name introduces a separate Thunderstore listing; remove the former BellControl package before installing Bell Lock.
 
-## 0.1.0 — Initial public release
+## 0.1.0 — Initial BellControl release
 
 - Host-only control of guest bell ringing, with guests blocked by default each hosted session.
 - Server-side guest command enforcement; the host can always ring normally.
