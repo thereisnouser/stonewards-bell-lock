@@ -1,4 +1,4 @@
-# Bell Lock 🔔🔒
+# BellLock 🔔🔒
 
 **Control who can ring the wave bell in Stonewards.** The host can lock or unlock the bell for other players without affecting their own ability to ring it.
 
@@ -12,11 +12,11 @@
 
 ## How to use
 
-1. Search Thunderstore for **Bell Lock** and install it with r2modman or Thunderstore Mod Manager. If the older **BellControl** package is installed, uninstall it first to avoid loading the same plugin twice.
+1. Search Thunderstore for **BellLock** and install it with r2modman or Thunderstore Mod Manager. If the older **BellControl** package is installed, uninstall it first to avoid loading the same plugin twice.
 2. **The host** starts Stonewards through the mod manager and hosts a session.
 3. Press **F8** to allow guests to ring the bell; press it again to block them.
 
-The host can always ring. **Guests do not need to install Bell Lock.** The panel is visible only to the host.
+The host can always ring. **Guests do not need to install BellLock.** The panel is visible only to the host.
 
 ## Position and configuration
 
