@@ -1,4 +1,4 @@
-# Bell Control 🔔
+# Bell Lock 🔔🔒
 
 **Control who can ring the wave bell in Stonewards.** The host can lock or unlock the bell for other players without affecting their own ability to ring it.
 
@@ -16,7 +16,7 @@
 2. **The host** starts Stonewards through the mod manager and hosts a session.
 3. Press **F8** to allow guests to ring the bell; press it again to block them.
 
-The host can always ring. **Guests do not need to install Bell Control.** The panel is visible only to the host.
+The host can always ring. **Guests do not need to install Bell Lock.** The panel is visible only to the host.
 
 ## Position and configuration
 
@@ -39,4 +39,4 @@ Designed for **Stonewards 0.2.3** and **BepInEx 5**. This is a **host-side mod**
 
 **Note:** the default **F8** shortcut may overlap with hotkeys used by other mods, including Party HUD's build inspector. Rebind the other mod's shortcut if needed.
 
-[Source code](https://github.com/thereisnouser/stonewards-bell-control) · [Report an issue](https://github.com/thereisnouser/stonewards-bell-control/issues)
+[Source code](https://github.com/thereisnouser/stonewards-bell-lock) · [Report an issue](https://github.com/thereisnouser/stonewards-bell-lock/issues)

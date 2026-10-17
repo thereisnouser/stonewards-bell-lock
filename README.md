@@ -1,4 +1,4 @@
-# Stonewards Bell Control 🔔
+# Stonewards Bell Lock 🔔🔒
 
 A lightweight **host-side** mod for Stonewards that lets the host decide when teammates can ring the wave bell.
 
@@ -15,7 +15,7 @@ A lightweight **host-side** mod for Stonewards that lets the host decide when te
 
 ## Install
 
-Install **BellControl** through Thunderstore/r2modman and start Stonewards using the **same profile**. Only the **host** needs to install it.
+Install **BellControl** (the existing Thunderstore package name) through Thunderstore/r2modman and start Stonewards using the **same profile**. Only the **host** needs to install it.
 
 Configuration file: `BepInEx/config/dev.stonewards.bellcontrol.cfg`.
 
@@ -35,6 +35,16 @@ When following Emote, the panel waits until the game's shortcut is available, ra
 
 **Note:** Party HUD can also use F8 for its builds window; change that mod's hotkey if the two overlap.
 
+## Repository and r2modman profile
+
+The GitHub repository is `stonewards-bell-lock`, and the matching r2modman profile should also be named `stonewards-bell-lock`. If you renamed the repository after cloning, you can update the old clone's remote URL:
+
+```powershell
+git remote set-url origin https://github.com/thereisnouser/stonewards-bell-lock.git
+```
+
+The existing Thunderstore package ID `BellControl`, BepInEx plugin GUID `dev.stonewards.bellcontrol`, DLL `StonewardsBellControl.dll` and config filename remain unchanged to preserve compatibility with existing installations.
+
 ## Building from source
 
 Requires a local Stonewards install, .NET SDK, and BepInEx 5. Game and framework DLLs are never redistributed.
@@ -42,7 +52,7 @@ Requires a local Stonewards install, .NET SDK, and BepInEx 5. Game and framework
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\build-and-install.ps1 `
   -GameDir "F:\Steam\steamapps\common\Stonewards" `
-  -ProfileDir "C:\Users\user\AppData\Roaming\r2modmanPlus-local\Stonewards\profiles\stonewards-bell-control"
+  -ProfileDir "C:\Users\user\AppData\Roaming\r2modmanPlus-local\Stonewards\profiles\stonewards-bell-lock"
 ```
 
 Build the **Thunderstore upload ZIP** instead (compiles without installing):
@@ -50,12 +60,12 @@ Build the **Thunderstore upload ZIP** instead (compiles without installing):
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\package-thunderstore.ps1 `
   -GameDir "F:\Steam\steamapps\common\Stonewards" `
-  -ProfileDir "C:\Users\user\AppData\Roaming\r2modmanPlus-local\Stonewards\profiles\stonewards-bell-control"
+  -ProfileDir "C:\Users\user\AppData\Roaming\r2modmanPlus-local\Stonewards\profiles\stonewards-bell-lock"
 ```
 
 Result: `dist/thereisnouser-BellControl-0.1.1.zip`. The script validates the version, PNG icon, DLL and ZIP contents before finishing; it **does not upload** the package.
 
-See [Thunderstore description](thunderstore/README.md), [multiplayer tests](docs/TESTING.md), [changelog](CHANGELOG.md), or [report an issue](https://github.com/thereisnouser/stonewards-bell-control/issues).
+See [Thunderstore description](thunderstore/README.md), [multiplayer tests](docs/TESTING.md), [changelog](CHANGELOG.md), or [report an issue](https://github.com/thereisnouser/stonewards-bell-lock/issues).
 
 ## Compatibility and limitations
 

@@ -3,7 +3,7 @@
 [CmdletBinding()]
 param(
     [string]$GameDir,
-    [string]$ProfileDir = (Join-Path $env:APPDATA 'r2modmanPlus-local\Stonewards\profiles\stonewards-bell-control'),
+    [string]$ProfileDir = (Join-Path $env:APPDATA 'r2modmanPlus-local\Stonewards\profiles\stonewards-bell-lock'),
     [switch]$SkipBuild
 )
 

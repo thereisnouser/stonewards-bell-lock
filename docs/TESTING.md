@@ -1,8 +1,8 @@
-# Bell Control 0.1.0 — release smoke tests
+# Bell Lock 0.1.1 — release smoke tests
 
-Target game: Stonewards 0.2.3 (BepInEx 5). Use the **stonewards-bell-control** r2modman profile.
+Target game: Stonewards 0.2.3 (BepInEx 5). Use the **stonewards-bell-lock** r2modman profile.
 
-- [ ] Release DLL loads without BepInEx errors, and logs version `0.1.0`.
+- [ ] Release DLL loads without BepInEx errors, and logs version `0.1.1`.
 - [ ] Panel is visible only to the host and displays one line near Emote.
 - [ ] The panel first appears in the correct Emote-relative position, with no visible jump.
 - [ ] At 1920×1080 and 2560×1440, the HUD stays readable and does not cover Emote, gold, Party HUD or Daily Quest Tracker.

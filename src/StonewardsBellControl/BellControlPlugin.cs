@@ -12,7 +12,7 @@ namespace StonewardsBellControl
     public sealed class BellControlPlugin : BaseUnityPlugin
     {
         public const string PluginGuid = "dev.stonewards.bellcontrol";
-        public const string PluginName = "Stonewards Bell Control";
+        public const string PluginName = "Stonewards Bell Lock";
         public const string PluginVersion = "0.1.1";
 
         internal static bool GuestsMayRing { get; private set; }
@@ -73,7 +73,7 @@ namespace StonewardsBellControl
             GuestsMayRing = false;
             _harmony = new Harmony(PluginGuid);
             _harmony.PatchAll(typeof(BellControlPlugin).Assembly);
-            Logger.LogInfo("Bell Control loaded. Host: F8 toggles guest access to the bell.");
+            Logger.LogInfo("Bell Lock loaded. Host: F8 toggles guest access to the bell.");
         }
 
         private void MigrateLayoutIfNeeded()
@@ -165,7 +165,7 @@ namespace StonewardsBellControl
                 {
                     _uiUnavailable = true;
                     DisposePanel();
-                    Logger.LogError("Failed to create Bell Control Canvas; F8 still works: " + ex);
+                    Logger.LogError("Failed to create Bell Lock Canvas; F8 still works: " + ex);
                     return;
                 }
             }

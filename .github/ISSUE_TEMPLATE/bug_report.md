@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report a reproducible problem with the bell control plugin
+about: Report a reproducible problem with the bell lock plugin
 title: '[Bug] '
 labels: bug
 assignees: ''
@@ -8,7 +8,7 @@ assignees: ''
 
 **Versions**
 - Stonewards:
-- Stonewards Bell Control:
+- Stonewards Bell Lock:
 - BepInEx:
 
 **Session**
