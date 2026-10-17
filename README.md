@@ -79,7 +79,7 @@ BellLock is a **BepInEx 5 + Harmony** mod. It patches the server-side handlers f
 Building requires Stonewards installed locally, a .NET SDK capable of targeting `netstandard2.1`, PowerShell, and a BepInEx 5 profile. Close the game and run the following commands from the repository root:
 
 ```powershell
-$gameDir = "F:\Steam\steamapps\common\Stonewards"
+$gameDir = "C:\path\to\Stonewards"
 $profileDir = Join-Path $env:APPDATA "r2modmanPlus-local\Stonewards\profiles\stonewards-bell-lock"
 
 powershell -ExecutionPolicy Bypass -File .\build-and-install.ps1 `
