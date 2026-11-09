@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.2 — Party HUD-style menu hiding
+
+- Hide BellLock's panel in the same full-screen screens as Party HUD: loading, shop, inventory, character selection, global mission menu, and between-wave upgrade/ring selection.
+- Hide the panel even when using manual positioning or an Emote fallback; restore it on return to gameplay.
+- Keep F8 control and server-side guest bell permissions active while the panel is hidden.
+
 ## 0.1.1 — BellLock package
 
 - Standardized GitHub and Thunderstore documentation for the BellLock release.

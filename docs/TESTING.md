@@ -1,10 +1,16 @@
-# BellLock 0.1.1 — release smoke tests
+# BellLock 0.1.2 — release smoke tests
 
 Target game: Stonewards 0.2.3 (BepInEx 5). Use the **stonewards-bell-lock** r2modman profile.
 
-- [ ] Release DLL loads without BepInEx errors, and logs version `0.1.1`.
+- [ ] Release DLL loads without BepInEx errors, and logs version `0.1.2`.
 - [ ] Panel is visible only to the host and displays one line near Emote.
 - [ ] The panel first appears in the correct Emote-relative position, with no visible jump.
+- [ ] The panel hides while the loading screen is visible and reappears afterward.
+- [ ] The panel hides in the shop, inventory, character selection and global mission menu.
+- [ ] The panel hides during between-wave upgrades and ring-choice offers.
+- [ ] The panel hides in those menus even with `FollowEmote = false` or after fixed-position fallback.
+- [ ] Closing the menu restores the panel in the correct position without resetting ALLOWED/BLOCKED.
+- [ ] F8 still toggles guest access while the panel is hidden; its button does not intercept hidden-menu clicks.
 - [ ] At 1920×1080 and 2560×1440, the HUD stays readable and does not cover Emote, gold, Party HUD or Daily Quest Tracker.
 - [ ] F8 switches permission state between BLOCKED and ALLOWED.
 - [ ] When the cursor is free, the button also switches permission state.

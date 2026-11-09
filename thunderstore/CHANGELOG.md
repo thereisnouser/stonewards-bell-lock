@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 — Menu-aware HUD visibility
+
+- The BellLock panel now hides in the same full-screen game menus as Party HUD.
+- Covered screens: loading, shop, inventory, character selection, global missions, and upgrade/ring choices between waves.
+- The panel reappears automatically when returning to gameplay, without resetting guest permissions.
+- F8 and server-side guest bell controls are unchanged.
+
 ## 0.1.1 — BellLock package
 
 - Standardized the player-facing README and configuration instructions.

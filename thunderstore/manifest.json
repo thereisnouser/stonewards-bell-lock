@@ -1,6 +1,6 @@
 {
   "name": "BellLock",
-  "version_number": "0.1.1",
+  "version_number": "0.1.2",
   "website_url": "https://github.com/thereisnouser/stonewards-bell-lock",
   "description": "Host-only wave bell lock for Stonewards. Block guest ringing by default and toggle access with F8 or a compact in-game button. No guest installation needed.",
   "dependencies": [

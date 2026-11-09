@@ -13,7 +13,7 @@ namespace StonewardsBellControl
     {
         public const string PluginGuid = "dev.stonewards.bellcontrol";
         public const string PluginName = "Stonewards Bell Lock";
-        public const string PluginVersion = "0.1.1";
+        public const string PluginVersion = "0.1.2";
 
         internal static bool GuestsMayRing { get; private set; }
 
@@ -150,6 +150,17 @@ namespace StonewardsBellControl
 
             if (Keyboard.current != null && Keyboard.current.f8Key.wasPressedThisFrame)
                 ToggleGuests();
+
+            // Match Party HUD's full-screen menu visibility rules. Emote can
+            // remain visible behind a modal screen, and manually anchored or
+            // fallback panels must also disappear while that screen is open.
+            // Hide only the Canvas: F8 and server-side bell rules stay active.
+            if (GameMenuVisibility.IsBlockingGameMenuOpen())
+            {
+                if (_panel != null && _panel.IsAlive)
+                    _panel.SetVisible(false);
+                return;
+            }
 
             if (_panel == null || !_panel.IsAlive)
             {

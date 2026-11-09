@@ -9,6 +9,7 @@
 - **Server-side protection** — blocked guest ring requests are rejected even if guests do not have the mod.
 - **Compact Stonewards-style HUD** — shows whether guest bell access is **ALLOWED** or **BLOCKED**.
 - **Emote-aware positioning** — automatically appears near the game's Emote shortcut, with adjustable placement and scale.
+- **Menu-aware visibility** — hides in the same full-screen game menus as Party HUD: loading, inventory, shop, character selection, mission menu and between-wave upgrade/ring choices.
 
 ## 🎮 How to use
 

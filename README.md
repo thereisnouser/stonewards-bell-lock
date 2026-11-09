@@ -10,6 +10,7 @@
 - **Host stays in control** — the host can still ring the bell while guests are blocked.
 - **Compact in-game panel** — one-row BellLock control with a Stonewards-inspired frame and an **ALLOWED / BLOCKED** status.
 - **Emote-aware placement** — the panel follows the game's **Emote** shortcut by default, with a fixed-position fallback and adjustable size and offsets.
+- **Menu-aware visibility** — like Party HUD, the panel hides during loading, inventory, shop, character selection, mission menu and between-wave upgrade/ring selection, then reappears in gameplay.
 
 ## 🎮 How to use
 
@@ -18,7 +19,7 @@
 3. Press **F8** to allow guests to ring the bell. Press **F8** again to block them.
 4. When the game cursor is unlocked, you can also click the panel's **ALLOW / BLOCK** button.
 
-The panel appears only for the host. If the Emote shortcut has not appeared yet, the panel waits until it can be positioned or uses the fixed fallback for that session; **F8** continues to work even when the panel is hidden. Starting a new hosted session resets guest access to **BLOCKED**.
+The panel appears only for the host. If the Emote shortcut has not appeared yet, the panel waits until it can be positioned or uses the fixed fallback for that session. It hides whenever Party HUD would hide for a full-screen game menu, including when using manual placement; **F8** continues to work even when the panel is hidden. Starting a new hosted session resets guest access to **BLOCKED**.
 
 **Shortcut conflict:** PartyHUD uses **F8** for its build inspector by default. BellLock's F8 shortcut is fixed in the current version; rebind the PartyHUD shortcut if you use both mods.
 
